@@ -13,7 +13,7 @@ public:
 	double grava;
 	double agua;
 
-private:
+public:
 	Material();
 	Material(string material, double cemento, double arena, double grava, double agua);
 	string getMaterial();

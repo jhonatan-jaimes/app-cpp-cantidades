@@ -5,7 +5,7 @@ private:
 	double areaOne;
 	double areaAll;
 
-private:
+public:
 	Areas();
 	Areas(double areaOne, double areaAll);
 	double getAreaOne();
