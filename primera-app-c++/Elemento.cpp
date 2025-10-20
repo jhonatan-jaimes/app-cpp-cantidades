@@ -1,35 +1,37 @@
 #include "Elemento.h"
 
-Elemento::Elemento() {
-	this->nameElemento = "";
-	this->canditadElemento = 0;
-	this->medidas = Medidas();
-	this->areas = Areas();
-	this->material = Material();
+Elemento::Elemento(string nombre, string tipo, int cantidad, Areas areas) : nombre(nombre), tipo(tipo), cantidad(cantidad), areas(areas) {}
+
+Elemento::Elemento() : Elemento("", "", 0, Areas()) {}
+
+string Elemento::getNombre() {
+	return this->nombre;
 }
 
-Elemento::Elemento(string nameElemento, int canditadElemento, Medidas medidas, Areas areas, Material material) {
-	this->nameElemento = nameElemento;
-	this->canditadElemento = canditadElemento;
-	this->medidas = medidas;
-	this->areas = areas;
-	this->material = material;
+string Elemento::getTipo() {
+	return this->tipo;
 }
 
-string Elemento::getNameElemento() {
-	return this->nameElemento;
+int Elemento::getCantidad() {
+	return this->cantidad;
 }
 
-int Elemento::getCantidadElemento() {
-	return this->canditadElemento;
-}
-
-Medidas Elemento::getMedidas() {
-	return this->medidas;
-}
 Areas Elemento::getAreas() {
 	return this->areas;
 }
-Material Elemento::getMaterial() {
-	return this->material;
+
+void Elemento::setNombre(string nombre) {
+	this->nombre = nombre;
+}
+
+void Elemento::setTipo(string tipo) {
+	this->tipo = tipo;
+}
+
+void Elemento::setCantidad(int cantidad) {
+	this->cantidad = cantidad;
+}
+
+void Elemento::setAreas(Areas areas) {
+	this->areas = areas;
 }

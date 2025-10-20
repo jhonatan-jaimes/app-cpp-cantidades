@@ -1,13 +1,11 @@
 #include "Areas.h"
 
-Areas::Areas() {
-	this->areaOne = 0.0;
-	this->areaAll = 0.0;
-}
+Areas::Areas() : Areas("", 0.0, 0.0) {}
 
-Areas::Areas(double areaOne, double areaAll) {
-	this->areaOne = areaOne;
-	this->areaAll = areaAll;
+Areas::Areas(string tipo, double areaOne, double areaAll) : tipo(tipo), areaAll(areaAll), areaOne(areaOne) {}
+
+string Areas::getTipo() {
+	return this->tipo;
 }
 
 double Areas::getAreaOne() {
@@ -16,4 +14,16 @@ double Areas::getAreaOne() {
 
 double Areas::getAreaAll() {
 	return this->areaAll;
+}
+
+void Areas::setTipo(string tipo) {
+	this->tipo = tipo;
+}
+
+void Areas::setAreaOne(double areaOne) {
+	this->areaOne = areaOne;
+}
+
+void Areas::setAreaAll(double areaAll) {
+	this->areaAll = areaAll;
 }

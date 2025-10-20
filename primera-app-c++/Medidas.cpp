@@ -1,24 +1,10 @@
 #include "Medidas.h"
-Medidas::Medidas() {
-	this->largo = 0.0;
-	this->ancho = 0.0;
-	this->alto = 0.0;
-}
 
-Medidas::Medidas(double largo, double ancho, double alto) {
-	this->largo = largo;
-	this->ancho = ancho;
-	this->alto = alto;
-}
+Medidas::Medidas(string tipo) : tipo(tipo) {}
 
-double Medidas::getLargo() {
-	return this->largo;
-}
+Medidas::Medidas() : Medidas("") {}
 
-double Medidas::getAncho() {
-	return this->ancho;
-}
+string Medidas::getTipo(){ return this->tipo; }
 
-double Medidas::getAlto() {
-	return this->alto;
-}
+void Medidas::setTipo(string tipo) { this->tipo = tipo; }
+

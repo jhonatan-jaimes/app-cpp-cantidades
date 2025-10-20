@@ -1,15 +1,17 @@
 #pragma once
+
+#include <iostream>
+
+using namespace std;
+
 class Medidas {
 private:
-	double largo;
-	double ancho;
-	double alto;
+	string tipo;
 
 public:
 	Medidas();
-	Medidas(double largo, double ancho, double alto);
-	double getLargo();
-	double getAncho();
-	double getAlto();
+	Medidas(string tipo);
+	string getTipo();
+	void setTipo(string tipo);
 };
 

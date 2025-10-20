@@ -1,11 +1,13 @@
 #include <iostream>
 #include "Medidas.h"
+#include "Application.h"
 
 using namespace std;
 
 int main() {
-	Medidas medidas = Medidas(4, 5, 6);
+	bool to_seguir = true;
 
-	cout << medidas.getAlto() * medidas.getLargo() * medidas.getAncho() << endl;
+	App::run(to_seguir);
 
+	return 0;
 }

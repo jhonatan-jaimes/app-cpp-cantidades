@@ -30,7 +30,22 @@
     <ClCompile Include="Elemento.cpp">
       <Filter>Implement Files</Filter>
     </ClCompile>
-    <ClCompile Include="Material.cpp">
+    <ClCompile Include="Medidas2D.cpp">
+      <Filter>Implement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Medidas3D.cpp">
+      <Filter>Implement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Elemento2D.cpp">
+      <Filter>Implement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Elemento3D.cpp">
+      <Filter>Implement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Calcular.cpp">
       <Filter>Implement Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,7 +59,22 @@
     <ClInclude Include="Elemento.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Material.h">
+    <ClInclude Include="Medidas2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Medidas3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Elemento2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Elemento3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Calcular.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,34 +1,29 @@
 #pragma once
 
 #include <string>
-#include "Medidas.h"
 #include "Areas.h"
-#include "Material.h"
+
 
 using namespace std;
 
 class Elemento
 {
 private:
-	string nameElemento;
-	int canditadElemento;
-	Medidas medidas;
+	string nombre;
+	string tipo;
+	int cantidad;
 	Areas areas;
-	Material material;
 
 public:
 	Elemento();
-	Elemento(
-		string nameElemento,
-		int canditadElemento,
-		Medidas medidas,
-		Areas areas,
-		Material material
-	);
-	string getNameElemento();
-	int getCantidadElemento();
-	Medidas getMedidas();
+	Elemento(string nombre, string tipo, int cantidad, Areas areas);
+	string getNombre();
+	string getTipo();
+	int getCantidad();
 	Areas getAreas();
-	Material getMaterial();
+	void setNombre(string nombre);
+	void setTipo(string tipo);
+	void setCantidad(int cantidad);
+	void setAreas(Areas areas);
 };
 
