@@ -4,7 +4,7 @@ Medidas::Medidas(string tipo) : tipo(tipo) {}
 
 Medidas::Medidas() : Medidas("") {}
 
-string Medidas::getTipo(){ return this->tipo; }
+string Medidas::getTipo() const{ return this->tipo; }
 
 void Medidas::setTipo(string tipo) { this->tipo = tipo; }
 

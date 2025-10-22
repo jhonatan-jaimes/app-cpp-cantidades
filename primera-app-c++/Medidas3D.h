@@ -10,7 +10,7 @@ private:
 public:
 	Medidas3D();
 	Medidas3D(string tipo, double largo, double ancho, double alto);
-	double getAlto();
+	double getAlto() const;
 	void setAlto(double alto);
 };
 

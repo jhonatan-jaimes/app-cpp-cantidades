@@ -11,8 +11,8 @@ private:
 public:
 	Medidas2D();
 	Medidas2D(string tipo, double largo, double ancho);
-	double getLargo();
-	double getAncho();
+	double getLargo() const;
+	double getAncho() const;
 	void setLargo(double largo);
 	void setAncho(double ancho);
 };

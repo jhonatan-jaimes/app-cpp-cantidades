@@ -4,6 +4,6 @@ Medidas3D::Medidas3D(string tipo, double largo, double ancho, double alto) : Med
 
 Medidas3D::Medidas3D() : Medidas3D("", 0.0, 0.0, 0.0) {}
 
-double Medidas3D::getAlto() { return alto; }
+double Medidas3D::getAlto() const { return this->alto; }
 
 void Medidas3D::setAlto(double alto) { this->alto = alto; }

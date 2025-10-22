@@ -5,9 +5,8 @@
 using namespace std;
 
 int main() {
-	bool to_seguir = true;
 
-	App::run(to_seguir);
+	App::run();
 
 	return 0;
 }

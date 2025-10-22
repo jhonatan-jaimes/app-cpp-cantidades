@@ -11,7 +11,7 @@ private:
 public:
 	Medidas();
 	Medidas(string tipo);
-	string getTipo();
+	string getTipo() const;
 	void setTipo(string tipo);
 };
 
