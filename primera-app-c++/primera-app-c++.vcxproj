@@ -134,7 +134,6 @@
     <ClCompile Include="Medidas.cpp" />
     <ClCompile Include="Medidas2D.cpp" />
     <ClCompile Include="Medidas3D.cpp" />
-    <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -147,7 +146,7 @@
     <ClInclude Include="Medidas.h" />
     <ClInclude Include="Medidas2D.h" />
     <ClInclude Include="Medidas3D.h" />
-    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Option.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
